@@ -4,6 +4,7 @@ import group from "../../assets/icons/group.svg";
 import googlePlay from "../../assets/icons/googleplay.svg";
 import apple from "../../assets/icons/apple.png";
 import phone from "../../assets/images/phone.png";
+import tab from "../../assets/images/tab.png";
 import { Link } from "react-router-dom";
 
 const Download = () => {
@@ -50,6 +51,7 @@ const Download = () => {
           </aside>
           <aside className={style.download__right}>
             <img src={phone} alt="phone" />
+            <img src={tab} alt="tab" />
           </aside>
         </div>
       </div>

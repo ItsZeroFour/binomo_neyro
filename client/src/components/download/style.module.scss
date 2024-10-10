@@ -140,6 +140,20 @@
 }
 
 .download__right {
+  position: relative;
+
+  img {
+    &:last-child {
+      position: absolute;
+      left: -210%;
+      z-index: -1;
+    }
+
+    &:first-child {
+      margin-top: 100px;
+    }
+  }
+
   @media (max-width: 1079px) {
     display: none;
   }

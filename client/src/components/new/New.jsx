@@ -28,18 +28,16 @@ const New = () => {
 
                 <li>
                   <p>
-                    2. Hazte un retrato AI con Borja, compártelo en Instagram,
-                    Telegram o TikTok etiquetando a la cuenta
-                    @binomo_america_latina.
+                    2. Hazte un retrato AI con Borja, compártelo en etiquetando
+                    a la cuenta @binomo_america_latina.
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    3. Gana uno de los premios: bono de depósito +50% (30
-                    participaciones), camisetas y balones autografiados (15
-                    participaciones) o una entrada para el partido Colombia vs
-                    Ecuador (5 participaciones).
+                    3. Gana uno de los premios: bono de depósito +50%, camisetas
+                    y balones autografiados o una entrada para el partido
+                    Colombia vs Ecuador.
                   </p>
                 </li>
               </ol>
