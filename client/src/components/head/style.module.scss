@@ -1,13 +1,18 @@
 .head {
   height: 90vh;
   background: var(--color-yellow);
+  overflow: hidden;
 
-  @media (max-width: 1275px) {
-    height: 70vh;
+  @media (max-height: 670px) {
+    height: 100vh;
   }
 
   @media (max-width: 520px) {
     height: 80vh;
+  }
+
+    @media (max-height: 520px) {
+    height: 100%;
   }
 }
 
@@ -22,6 +27,11 @@
     flex-direction: column;
     gap: 60px;
     width: 770px;
+
+     @media (max-height: 520px) {
+       margin-bottom: 40px;
+     }
+
 
     h1 {
       font-size: 70px;
