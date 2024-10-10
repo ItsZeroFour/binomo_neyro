@@ -158,7 +158,7 @@ const Generator = () => {
             src={`${process.env.REACT_APP_SERVER_URL.replace(
               "/api",
               ""
-            )}/savedAi/${aiImageGeneratedName}`}
+            )}/aiGet/${aiImageGeneratedName}`}
             alt="ai image generated"
           />
         )
