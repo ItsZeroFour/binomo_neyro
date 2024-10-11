@@ -2,6 +2,14 @@ import React from "react";
 import style from "./style.module.scss";
 import tshirtImg from "../../assets/images/tshirt.png";
 import ticketsImg from "../../assets/images/tickets.png";
+import saleImg from "../../assets/images/sale.png";
+import { Pagination } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+// import "swiper/css/pagination";
 
 const Merch = () => {
   return (
@@ -36,7 +44,97 @@ const Merch = () => {
                 <p>Camiseta Binomo</p>
               </div>
             </li>
+
+            <li>
+              <div className={style.merch__count}>
+                <p>3x</p>
+              </div>
+
+              <div>
+                <img src={saleImg} alt="tickets" />
+              </div>
+
+              <div>
+                <p>Camiseta Binomo</p>
+              </div>
+            </li>
           </ul>
+
+          <Swiper
+            className={style.merch__container}
+            modules={[Pagination]}
+            spaceBetween={30}
+            slidesPerView={1.1}
+            navigation
+            pagination={{ clickable: true, el: ".custom-pagination" }}
+            scrollbar={{ draggable: true }}
+            loop={true}
+            breakpoints={{
+              1800: {
+                slidesPerView: 1.2,
+              },
+
+              680: {
+                slidesPerView: 1.1,
+              },
+
+              520: {
+                slidesPerView: 1.1,
+              },
+
+              425: {
+                slidesPerView: 1.08,
+              },
+
+              320: {
+                slidesPerView: 1.2,
+              },
+            }}
+          >
+            <SwiperSlide className={style.merch__item}>
+              <div className={style.merch__count}>
+                <p>3х</p>
+              </div>
+
+              <div>
+                <img src={tshirtImg} alt="tshirt" />
+              </div>
+
+              <div>
+                <p>Camiseta Binomo</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.merch__item}>
+              <div className={style.merch__count}>
+                <p>3х</p>
+              </div>
+
+              <div>
+                <img src={ticketsImg} alt="tickets" />
+              </div>
+
+              <div>
+                <p>Camiseta Binomo</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className={style.merch__item}>
+              <div className={style.merch__count}>
+                <p>3x</p>
+              </div>
+
+              <div>
+                <img src={saleImg} alt="tickets" />
+              </div>
+
+              <div>
+                <p>Camiseta Binomo</p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+
+          <div className="custom-pagination"></div>
         </div>
       </div>
     </section>

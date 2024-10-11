@@ -98,3 +98,23 @@ li {
   height: 100%;
   overflow: hidden;
 }
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #ffdc3c; /* Цвет активной пагинации */
+  transform: scale(1.3); /* Увеличение активной точки */
+}

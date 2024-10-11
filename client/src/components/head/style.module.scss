@@ -11,7 +11,7 @@
     height: 80vh;
   }
 
-    @media (max-height: 520px) {
+  @media (max-height: 520px) {
     height: 100%;
   }
 }
@@ -28,10 +28,9 @@
     gap: 60px;
     width: 770px;
 
-     @media (max-height: 520px) {
-       margin-bottom: 40px;
-     }
-
+    @media (max-height: 520px) {
+      margin-bottom: 40px;
+    }
 
     h1 {
       font-size: 70px;
@@ -103,6 +102,7 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
+    transform-style: preserve-3d;
 
     @media (max-width: 1275px) {
       height: 70vh;
@@ -111,12 +111,28 @@
     @media (max-width: 860px) {
       display: none;
     }
+
+    &:before {
+      content: "";
+      position: absolute;
+
+      width: 100vw;
+      height: 100vh;
+      left: -70%;
+
+      background: url("../../assets/images/lightning.png");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      transform: translateX(-1px);
+    }
   }
 
   .head__right img {
     width: 817px;
     height: auto;
     margin-top: auto;
+    z-index: 2;
 
     @media (max-height: 900px) {
       height: auto;
