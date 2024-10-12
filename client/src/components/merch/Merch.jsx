@@ -64,18 +64,18 @@ const Merch = () => {
             className={style.merch__container}
             modules={[Pagination]}
             spaceBetween={30}
-            slidesPerView={1.1}
+            slidesPerView={0.8}
             navigation
             pagination={{ clickable: true, el: ".custom-pagination" }}
             scrollbar={{ draggable: true }}
             loop={true}
             breakpoints={{
               1800: {
-                slidesPerView: 1.2,
+                slidesPerView: 0.8,
               },
 
               680: {
-                slidesPerView: 1.1,
+                slidesPerView: 1.2,
               },
 
               520: {
