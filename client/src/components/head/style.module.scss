@@ -125,6 +125,11 @@
     margin-top: auto;
     z-index: 2;
 
+    @media (max-height: 700px) {
+      width: 370px !important;
+      margin-bottom: 400px;
+    }
+
     @media (max-width: 920px) {
       width: 500px !important;
       height: auto;
@@ -133,12 +138,7 @@
 
     @media (max-width: 520px) {
       width: 420px !important;
-      margin-bottom: 350px;
-    }
-
-    @media (max-height: 700px) {
-      width: 350px !important;
-      margin-bottom: 400px;
+      margin-bottom: 380px;
     }
 
     @media (max-width: 1400px) {
