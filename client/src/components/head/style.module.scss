@@ -112,20 +112,6 @@
       display: none;
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-
-      width: 100vw;
-      height: 100vh;
-      left: -70%;
-
-      background: url("../../assets/images/lightning.png");
-      background-position: center;
-      background-repeat: no-repeat;
-
-      transform: translateX(-1px);
-    }
   }
 
   .head__right img {
