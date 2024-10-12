@@ -46,7 +46,7 @@ const New = () => {
                 Bases detalladas aquí.
               </Link>
 
-              <Link className={style.new__link__second} to="/">
+              <Link className={style.new__link__second} to="/upload">
                 Generar
               </Link>
             </li>
