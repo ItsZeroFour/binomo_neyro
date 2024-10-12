@@ -14,7 +14,7 @@ const Head = () => {
               Сamisetas y balones con su autógrafo, entradas de fútbol y bonos
               de depósito en Binomo. Dream big with Binomo!
             </p>
-            <Link to="/">Genere</Link>
+            <Link to="/upload">Genere</Link>
           </aside>
           <aside className={style.head__right}>
             <img src={headImg} alt="Miguel Ángel Borja" />
