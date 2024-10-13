@@ -51,8 +51,12 @@ html {
 /* CONTAINER */
 .container {
   max-width: 1800px;
-  padding: 0 10px;
+  padding: 0 100px;
   margin: 0 auto;
+
+  @media (max-width: 980px) {
+    padding: 0 10px;
+  }
 }
 
 p,

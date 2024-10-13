@@ -12,9 +12,9 @@ const Head = () => {
             <h1>Crea un retrato robot con Miguel Ángel Borja y gana premios</h1>
             <p>
               Сamisetas y balones con su autógrafo, entradas de fútbol y bonos
-              de depósito en Binomo. Dream big with Binomo!
+              de depósito en Binomo. ¡Sueña a lo grande con Binomo!
             </p>
-            <Link to="/upload">Genere</Link>
+            <Link to="/upload-image">Genere</Link>
           </aside>
           <aside className={style.head__right}>
             <img src={headImg} alt="Miguel Ángel Borja" />

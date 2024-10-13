@@ -1,0 +1,17 @@
+.neyro_image_generated {
+  height: 100vh;
+  background: var(--color-dark);
+}
+
+.neyro_image_generated__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  p {
+    font-size: 20px;
+    color: var(--color-yellow);
+  }
+}

@@ -16,19 +16,23 @@ const Footer = () => {
         <div className={style.footer__wrapper}>
           <aside className={style.footer__left}>
             <p>
-              The financial operations on this site may involve risks. By using
-              the tools and services provided here, you may incur financial
-              losses up to a complete loss of the funds on your Binomo account.
-              Please evaluate the risks and consult with an independent
-              financial advisor before making any trades. Binomo is not
-              responsible for any direct, indirect, consequential losses, or any
-              other damages resulting from the user's actions on the platform.
+              Las operaciones financieras que se ofrecen en este sitio pueden
+              involucrar riesgos. Al usar los servicios y herramientas
+              financieras que se ofrecen aquí, usted puede sufrir pérdidas
+              financieras, incluyendo la pérdida completa de los fondos en su
+              cuenta de Binomo. Por favor, evalúe todos los riesgos financieros
+              y consulte a un asesor financiero independiente antes de hacer
+              cualquier negociación.
             </p>
 
             <p>
-              Binomo is a category "A" member of the International Financial
-              Commission, which guarantees our customers high-quality service,
-              transparency, and dispute resolution by an independent regulator.
+              Binomo no es responsable de ninguna pérdida directa, indirecta o
+              consecuencial, o de cualquier otro daño que resulte de las
+              acciones del usuario en la plataforma. Binomo es un miembro de
+              categoría "A" de la Comisión Financiera Internacional, lo cual
+              garantiza a nuestros clientes una alta calidad de servicio,
+              transparencia, y la resolución de disputas por parte de un
+              regulador independiente.
             </p>
           </aside>
 

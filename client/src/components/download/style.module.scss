@@ -73,8 +73,8 @@
           }
         }
 
-        @media (max-width: 1079px) {
-          width: 48vw;
+        @media (max-width: 600px) {
+          width: 100%;
         }
 
         @media (max-width: 520px) {
@@ -130,8 +130,8 @@
     }
   }
 
-  @media (max-width: 1079px) {
-    width: 98vw;
+  @media (max-width: 600px) {
+    width: 100%;
   }
 
   @media (max-width: 520px) {
@@ -145,8 +145,9 @@
   img {
     &:last-child {
       position: absolute;
-      left: -210%;
+      left: -180%;
       z-index: -1;
+      width: 55vw;
 
       @media (max-width: 1650px) {
         display: none;

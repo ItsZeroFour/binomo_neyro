@@ -42,11 +42,14 @@ const New = () => {
                 </li>
               </ol>
 
-              <Link className={style.new__link__first} to="/">
+              <Link
+                className={style.new__link__first}
+                to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es"
+              >
                 Bases detalladas aquí.
               </Link>
 
-              <Link className={style.new__link__second} to="/upload">
+              <Link className={style.new__link__second} to="/upload-image">
                 Generar
               </Link>
             </li>

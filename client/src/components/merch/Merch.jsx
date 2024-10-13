@@ -27,7 +27,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Camiseta Binomo</p>
+                <p>Сamisetas y balones con su autógrafo</p>
               </div>
             </li>
 
@@ -41,7 +41,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Camiseta Binomo</p>
+                <p>Entradas de fútbol</p>
               </div>
             </li>
 
@@ -55,7 +55,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Camiseta Binomo</p>
+                <p>Bonos de depósito</p>
               </div>
             </li>
           </ul>
@@ -101,7 +101,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Camiseta Binomo</p>
+                <p>Сamisetas y balones con su autógrafo</p>
               </div>
             </SwiperSlide>
 
@@ -115,7 +115,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Camiseta Binomo</p>
+                <p>Entradas de fútbol</p>
               </div>
             </SwiperSlide>
 
@@ -129,7 +129,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Camiseta Binomo</p>
+                <p>Bonos de depósito</p>
               </div>
             </SwiperSlide>
           </Swiper>
