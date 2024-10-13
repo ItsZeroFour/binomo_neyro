@@ -18,10 +18,6 @@ const Merch = () => {
         <div className={style.merch__wrapper}>
           <ul>
             <li>
-              <div className={style.merch__count}>
-                <p>3х</p>
-              </div>
-
               <div>
                 <img src={tshirtImg} alt="tshirt" />
               </div>
@@ -32,10 +28,6 @@ const Merch = () => {
             </li>
 
             <li>
-              <div className={style.merch__count}>
-                <p>3х</p>
-              </div>
-
               <div>
                 <img src={ticketsImg} alt="tickets" />
               </div>
@@ -46,10 +38,6 @@ const Merch = () => {
             </li>
 
             <li>
-              <div className={style.merch__count}>
-                <p>3x</p>
-              </div>
-
               <div>
                 <img src={saleImg} alt="tickets" />
               </div>
@@ -70,8 +58,8 @@ const Merch = () => {
             scrollbar={{ draggable: true }}
             loop={true}
             breakpoints={{
-              1800: {
-                slidesPerView: 0.8,
+              1295: {
+                slidesPerView: 1.1,
               },
 
               680: {
@@ -92,10 +80,6 @@ const Merch = () => {
             }}
           >
             <SwiperSlide className={style.merch__item}>
-              <div className={style.merch__count}>
-                <p>3х</p>
-              </div>
-
               <div>
                 <img src={tshirtImg} alt="tshirt" />
               </div>
@@ -106,10 +90,6 @@ const Merch = () => {
             </SwiperSlide>
 
             <SwiperSlide className={style.merch__item}>
-              <div className={style.merch__count}>
-                <p>3х</p>
-              </div>
-
               <div>
                 <img src={ticketsImg} alt="tickets" />
               </div>
@@ -120,10 +100,6 @@ const Merch = () => {
             </SwiperSlide>
 
             <SwiperSlide className={style.merch__item}>
-              <div className={style.merch__count}>
-                <p>3x</p>
-              </div>
-
               <div>
                 <img src={saleImg} alt="tickets" />
               </div>
