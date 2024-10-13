@@ -37,7 +37,7 @@ const ImageGenerated = () => {
       const imageUrl = `${process.env.REACT_APP_SERVER_URL.replace(
         "/api",
         ""
-      )}/savedAi/${neyroImageName}`;
+      )}/aiGet/${neyroImageName}`;
 
       const response = await fetch(imageUrl);
       const blob = await response.blob();
@@ -104,7 +104,7 @@ const ImageGenerated = () => {
                 src={`${process.env.REACT_APP_SERVER_URL.replace(
                   "/api",
                   ""
-                )}/savedAi/${neyroImageName}`}
+                )}/aiGet/${neyroImageName}`}
                 alt="ai image"
               />
 
