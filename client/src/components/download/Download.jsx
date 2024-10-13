@@ -14,7 +14,7 @@ const Download = () => {
         <div className={style.download__wrapper}>
           <aside className={style.download__left}>
             <h2>Puede operar en cualquier dispositivo</h2>
-            <p>Puede operar en cualquier dispositivo</p>
+            {/* <p>Puede operar en cualquier dispositivo</p> */}
 
             <div className={style.download__users}>
               <div>

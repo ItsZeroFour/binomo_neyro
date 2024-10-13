@@ -149,7 +149,23 @@
       z-index: -1;
       width: 55vw;
 
-      @media (max-width: 1650px) {
+      @media (max-width: 1725px) {
+        left: -150%;
+      }
+
+      @media (max-width: 1635px) {
+        left: -110%;
+      }
+
+      @media (max-width: 1495px) {
+        left: -100%;
+      }
+
+      @media (max-width: 1460px) {
+        left: -90%;
+      }
+
+      @media (max-width: 1420px) {
         display: none;
       }
     }
