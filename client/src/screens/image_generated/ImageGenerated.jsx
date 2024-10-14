@@ -150,7 +150,7 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
                 <h1>tu foto está lista!</h1>
                 <p>
                   Su código promocional especial: BORJABINOMO. El código
-                  promocional da +100% al depósito.
+                  promocional da +50% al depósito.
                 </p>
                 <p>
                   Comparte esta imagen en Instagram, TikTok o Telegram para

@@ -75,7 +75,13 @@ function App() {
             path="/"
             element={
               <>
-                <Header />
+                <Header
+                  utmSource={utmSource}
+                  utmMedium={utmMedium}
+                  utmCampaign={utmCampaign}
+                  a={a}
+                  ac={ac}
+                />
 
                 <main>
                   <Head />
@@ -85,16 +91,41 @@ function App() {
                   <Download />
                 </main>
 
-                <Footer />
+                <Footer
+                  utmSource={utmSource}
+                  utmMedium={utmMedium}
+                  utmCampaign={utmCampaign}
+                  a={a}
+                  ac={ac}
+                />
               </>
             }
           />
 
-          <Route path="/upload-image" element={<UploadImage />} />
+          <Route
+            path="/upload-image"
+            element={
+              <UploadImage
+                utmSource={utmSource}
+                utmMedium={utmMedium}
+                utmCampaign={utmCampaign}
+                a={a}
+                ac={ac}
+              />
+            }
+          />
           <Route path="/upload-image/camera" element={<Camera />} />
           <Route
             path="/neyro-image-generate"
-            element={<NeyroImageGenerate />}
+            element={
+              <NeyroImageGenerate
+                utmSource={utmSource}
+                utmMedium={utmMedium}
+                utmCampaign={utmCampaign}
+                a={a}
+                ac={ac}
+              />
+            }
           />
           <Route
             path="/image-generated"

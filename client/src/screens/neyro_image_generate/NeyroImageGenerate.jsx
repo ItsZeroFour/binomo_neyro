@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import style from "./style.module.scss";
 
-const NeyroImageGenerate = () => {
+const NeyroImageGenerate = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
   const [aiImageGeneratedName, setAiImageGeneratedName] = useState("");
   const location = useLocation();
 
@@ -81,7 +81,17 @@ const NeyroImageGenerate = () => {
     <section className={style.neyro_image_generated}>
       <div className="container">
         <div className={style.neyro_image_generated__logo}>
-          <Link to="/">
+          <Link
+            to={
+              utmSource !== null &&
+              utmMedium !== null &&
+              utmCampaign !== null &&
+              a !== null &&
+              ac !== null
+                ? `https://binomo.com/es-es?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
+                : "https://binomo.com/es-es"
+            }
+          >
             <svg
               width="176"
               height="34"

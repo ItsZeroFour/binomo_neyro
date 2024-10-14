@@ -9,7 +9,7 @@ import facebook from "../../assets/icons/facebook.svg";
 import tiktok from "../../assets/icons/tiktok.svg";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className={style.footer}>
@@ -38,7 +38,18 @@ const Footer = () => {
           </aside>
 
           <aside className={style.footer__right}>
-            <Link to="/" target="_blank">
+            <Link
+              to={
+                utmSource !== null &&
+                utmMedium !== null &&
+                utmCampaign !== null &&
+                a !== null &&
+                ac !== null
+                  ? `https://binomo.com/es-es?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
+                  : "https://binomo.com/es-es"
+              }
+              target="_blank"
+            >
               <img src={logo} alt="logo" />
             </Link>
 

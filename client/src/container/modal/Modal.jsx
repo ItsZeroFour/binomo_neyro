@@ -20,8 +20,8 @@ const Modal = ({ setModal }) => {
 
             <li>
               <p>
-                2. Hazte un retrato AI con Borja, compártelo en etiquetando a la
-                cuenta @binomo_america_latina.
+                Hazte un retrato AI con Borja, compártelo en las redes sociales
+                etiquetando a la cuenta @binomo_america_latina.
               </p>
             </li>
 
