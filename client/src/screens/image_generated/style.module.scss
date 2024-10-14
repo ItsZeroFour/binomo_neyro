@@ -57,6 +57,7 @@
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+    max-height: 500px;
 
     @media (max-width: 1600px) {
       height: auto;
@@ -70,8 +71,8 @@
 
     @media (max-width: 950px) {
       width: 100%;
-      height: auto;
-    }
+      height: auto; 
+   }
   }
 
   p {
