@@ -2,7 +2,7 @@
   height: 100vh;
   background: var(--color-dark);
   padding-top: 20px;
-  overflow: auto;
+  overflow-y: auto;
 
   @media (max-height: 600px) {
     height: 100%;
@@ -18,26 +18,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  // height: 90vh;
 
-  @media (max-width: 1345px) {
-    padding-top: 200px;
-  }
-
-  @media (max-width: 1160px) {
-    padding-top: 50px;
-  }
-
-  @media (max-height: 1060px) and (min-width: 450px) {
-    padding-top: 50px !important;
-  }
-
-  @media (max-height: 850px) and (min-width: 520px) {
-    padding-top: 50px !important;
-  }
-
-  @media (max-width: 450px) {
-    height: 100%;
+  @media (min-width: 1345px) {
+    margin-top: 100px;
   }
 }
 
@@ -172,6 +156,10 @@
       border: 1px solid var(--color-yellow);
     }
   }
+
+  @media (max-width: 520px) {
+    padding-bottom: 100px;
+  }
 }
 
 .image_generated__share {
@@ -293,11 +281,12 @@
   padding: 40px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  height: 40vh;
-  top: 60%;
+  height: 50vh;
+  top: 400px;
   left: 0;
   width: 100vw;
   z-index: 5;
+  overflow: hidden;
   animation-duration: 0.5s;
   animation-name: fromBottomToTop;
 }
