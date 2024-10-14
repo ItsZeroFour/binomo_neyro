@@ -30,6 +30,7 @@
 
       p {
         font-size: 28px;
+        text-align: center;
 
         @media (max-width: 520px) {
           font-size: 20px;
@@ -129,6 +130,7 @@
   p {
     font-size: 28px;
     margin-top: auto;
+    text-align: center;
 
     @media (max-width: 520px) {
       font-size: 20px;
