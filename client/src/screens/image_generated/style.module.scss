@@ -54,7 +54,8 @@
   img {
     width: 880px;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
 
     @media (max-width: 1600px) {
@@ -195,7 +196,8 @@
         width: 30px;
         height: 30px;
         border-radius: 0px !important;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
 
         @media (max-width: 620px) {
           width: auto;
@@ -265,6 +267,16 @@
   }
 }
 
+@-webkit-keyframes fromBottomToTop {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 60%;
+  }
+}
+
 @keyframes fromBottomToTop {
   from {
     top: 100%;
@@ -287,8 +299,10 @@
   width: 100vw;
   z-index: 5;
   overflow: hidden;
-  animation-duration: 0.5s;
-  animation-name: fromBottomToTop;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: fromBottomToTop;
+          animation-name: fromBottomToTop;
 }
 
 .image_generated__share__menu {
