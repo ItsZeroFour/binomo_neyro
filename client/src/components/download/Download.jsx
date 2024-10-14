@@ -19,7 +19,7 @@ const Download = () => {
             <div className={style.download__users}>
               <div>
                 <h3>10m+</h3>
-                <p>Descargas </p>
+                <p>Descargas</p>
               </div>
 
               <img src={group} alt="group" />
@@ -31,7 +31,7 @@ const Download = () => {
                   <img src={googlePlay} alt="google play binomo" />
 
                   <div>
-                    <p>Download on</p>
+                    <p>Descargas</p>
                     <h4>Google play</h4>
                   </div>
                 </Link>
@@ -42,7 +42,7 @@ const Download = () => {
                   <img src={apple} alt="app store binomo" />
 
                   <div>
-                    <p>Download on</p>
+                    <p>Descargas</p>
                     <h4>App store</h4>
                   </div>
                 </Link>
