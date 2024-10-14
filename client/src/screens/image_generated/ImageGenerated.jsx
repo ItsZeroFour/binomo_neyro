@@ -150,7 +150,7 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
                 <h1>tu foto está lista!</h1>
                 <p>
                   Su código promocional especial: BORJABINOMO. El código
-                  promocional da +35% al primer depósito.
+                  promocional da +100% al depósito.
                 </p>
                 <p>
                   Comparte esta imagen en Instagram, TikTok o Telegram para
@@ -167,8 +167,8 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
                       utmCampaign !== null &&
                       a !== null &&
                       ac !== null
-                        ? `https://binomo.com?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
-                        : "https://binomo.com"
+                        ? `https://binomo.com/es-es?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
+                        : "https://binomo.com/es-es"
                     }
                   >
                     Cambiar a Binomo

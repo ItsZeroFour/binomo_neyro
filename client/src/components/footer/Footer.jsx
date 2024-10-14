@@ -6,6 +6,7 @@ import instagram from "../../assets/icons/instagram.svg";
 import x from "../../assets/icons/x.svg";
 import telegram from "../../assets/icons/telegram.svg";
 import facebook from "../../assets/icons/facebook.svg";
+import tiktok from "../../assets/icons/tiktok.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -37,38 +38,56 @@ const Footer = () => {
           </aside>
 
           <aside className={style.footer__right}>
-            <Link to="/">
+            <Link to="/" target="_blank">
               <img src={logo} alt="logo" />
             </Link>
 
             <ul>
               <li>
-                <Link to="/">
+                <Link
+                  to="https://www.youtube.com/channel/UCwkD9jHgRANkwNWMKfZQm0w "
+                  target="_blank"
+                >
                   <img src={youtube} alt="youtube" />
                 </Link>
               </li>
 
               <li>
-                <Link to="/">
+                <Link
+                  to="https://www.instagram.com/binomo_america_latina/"
+                  target="_blank"
+                >
                   <img src={instagram} alt="instagram" />
                 </Link>
               </li>
 
               <li>
-                <Link to="/">
+                <Link to="" target="_blank">
                   <img src={x} alt="x" />
                 </Link>
               </li>
 
               <li>
-                <Link to="/">
+                <Link to="https://t.me/binomo_america_latina" target="_blank">
                   <img src={telegram} alt="telegram" />
                 </Link>
               </li>
 
               <li>
-                <Link to="/">
+                <Link
+                  to="https://www.facebook.com/binomo.america.latina"
+                  target="_blank"
+                >
                   <img src={facebook} alt="facebook" />
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="https://www.tiktok.com/@binomo_america_latina"
+                  target="_blank"
+                >
+                  <img src={tiktok} alt="tiktok" />
                 </Link>
               </li>
             </ul>

@@ -21,8 +21,6 @@ function App() {
   const [a, setA] = useState("");
   const [ac, setAc] = useState("");
 
-  console.log(searchParams.get("utm_source"));
-
   useEffect(() => {
     function setUtmToLocalstorage() {
       localStorage.setItem("utm_source", searchParams.get("utm_source"));
@@ -39,8 +37,6 @@ function App() {
       searchParams.get("a") &&
       searchParams.get("ac")
     ) {
-      console.log(utmSource, utmMedium);
-
       setUtmToLocalstorage();
     }
 
