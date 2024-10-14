@@ -4,6 +4,14 @@ import newImg from "../../assets/images/new_man.png";
 import { Link } from "react-router-dom";
 
 const New = () => {
+  const handleClick = () => {
+    if (window.fbq) {
+      window.fbq("track", "Lead");
+    } else {
+      console.warn("Error!");
+    }
+  };
+
   return (
     <section className={style.new}>
       <div className="container">
@@ -28,16 +36,16 @@ const New = () => {
 
                 <li>
                   <p>
-                    2. Hazte un retrato AI con Borja, compártelo en etiquetando
-                    a la cuenta @binomo_america_latina.
+                    2. Hazte un retrato AI con Borja, compártelo en las redes
+                    sociales etiquetando a la cuenta @binomo_america_latina
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    3. Gana uno de los premios: bono de depósito +50%, camisetas
-                    y balones autografiados o una entrada para el partido
-                    Colombia vs Ecuador.
+                    3. Gana uno de los premios: bono de depósito +100%,
+                    camisetas y balones autografiados o una entrada para el
+                    partido Colombia vs Ecuador.
                   </p>
                 </li>
               </ol>
@@ -49,7 +57,11 @@ const New = () => {
                 Bases detalladas aquí.
               </Link>
 
-              <Link className={style.new__link__second} to="/upload-image">
+              <Link
+                className={style.new__link__second}
+                to="/upload-image"
+                onClick={handleClick}
+              >
                 Generar
               </Link>
             </li>

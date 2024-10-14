@@ -105,7 +105,7 @@ const Merch = () => {
               </div>
 
               <div>
-                <p>Bonos de depósito</p>
+                <p>Código de promoción</p>
               </div>
             </SwiperSlide>
           </Swiper>
