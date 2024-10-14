@@ -1,7 +1,7 @@
 .upload_image {
   background: #1f1f1f;
   height: 100vh;
-  overflow: hidden;
+  padding-bottom: 20px;
 
   svg {
     margin-top: 20px;
@@ -9,6 +9,10 @@
 
   @media (max-width: 980px) {
     overflow: auto;
+  }
+
+  @media (max-height: 830px) {
+    height: 100%;
   }
 }
 
