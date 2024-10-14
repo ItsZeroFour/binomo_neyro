@@ -81,7 +81,7 @@ const NeyroImageGenerate = () => {
     <section className={style.neyro_image_generated}>
       <div className="container">
         <div className={style.neyro_image_generated__logo}>
-          <Link to="/">
+          <Link to="https://binomo.com/es-es">
             <svg
               width="176"
               height="34"

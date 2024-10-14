@@ -27,7 +27,7 @@ const Download = () => {
 
             <ul>
               <li>
-                <Link to="/">
+                <Link to="https://play.google.com/store/apps/details?id=com.marketly.trading&pcampaignid=web_share">
                   <img src={googlePlay} alt="google play binomo" />
 
                   <div>
@@ -38,7 +38,7 @@ const Download = () => {
               </li>
 
               <li>
-                <Link to="/">
+                <Link to="https://apps.apple.com/co/app/binomo-online-trade-assistant/id1630992883">
                   <img src={apple} alt="app store binomo" />
 
                   <div>

@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="" target="_blank">
+                <Link to="https://x.com/page_binomo" target="_blank">
                   <img src={x} alt="x" />
                 </Link>
               </li>

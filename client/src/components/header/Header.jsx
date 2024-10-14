@@ -8,7 +8,7 @@ const Header = () => {
     <header className={style.header}>
       <div className="container">
         <div className={style.header__wrapper}>
-          <Link to="/">
+          <Link to="https://binomo.com/es-es">
             <img src={logo} alt="logo" />
           </Link>
         </div>

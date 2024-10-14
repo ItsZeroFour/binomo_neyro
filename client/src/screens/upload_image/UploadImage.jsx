@@ -109,7 +109,7 @@ const UploadImage = () => {
     <section className={style.upload_image}>
       <div className="container">
         <div className={style.upload_image__wrapper}>
-          <Link to="/">
+          <Link to="https://binomo.com/es-es">
             <svg
               width="176"
               height="34"
