@@ -11,6 +11,10 @@
     overflow: auto;
     height: 100%;
   }
+
+  @media (max-width: 520px) {
+    height: 110vh;
+  }
 }
 
 .upload_image__wrapper {
@@ -18,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     gap: 20px;
 
     li,
@@ -93,6 +97,7 @@
       justify-content: start;
       align-items: start;
       margin-top: 60px;
+      height: 100%;
     }
   }
 }
@@ -157,5 +162,27 @@
     button {
       width: 90vw !important;
     }
+  }
+}
+
+.upload_image__upload {
+  display: flex;
+  flex-direction: column;
+  // height: 50%;
+}
+
+.upload_image__upload > p {
+  color: var(--color-white);
+  text-align: center;
+  margin-top: auto;
+  opacity: 0.7;
+
+  a {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 520px) {
+    // margin-bottom: 100px;
+    margin-top: 0px;
   }
 }

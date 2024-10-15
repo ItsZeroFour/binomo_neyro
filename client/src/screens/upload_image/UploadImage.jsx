@@ -133,59 +133,54 @@ const UploadImage = () => {
           </Link>
 
           {!image ? (
-            <ul>
-              <input
-                id="create-post-img"
-                type="file"
-                hidden
-                onChange={handleChangeFile}
-                accept=".jpg, .png, .jpeg"
-              />
+            <div className={style.upload_image__upload}>
+              <ul>
+                <input
+                  id="create-post-img"
+                  type="file"
+                  hidden
+                  onChange={handleChangeFile}
+                  accept=".jpg, .png, .jpeg"
+                />
 
-              <li>
-                <label htmlFor="create-post-img">
+                <li>
+                  <label htmlFor="create-post-img">
+                    <div className={style.upload_image__content}>
+                      <img src={uploadIcon} alt="upload image" />
+                      <h3>Cargar una imagen</h3>
+                      <p>
+                        En la imagen sólo debe aparecer tu cara. La imagen no
+                        debe superar los 5 megabytes
+                      </p>
+                    </div>
+                  </label>
+                </li>
+
+                <li
+                  onClick={() =>
+                    isCamera
+                      ? navigate("/upload-image/camera")
+                      : navigate("/upload-image")
+                  }
+                >
                   <div className={style.upload_image__content}>
-                    <img src={uploadIcon} alt="upload image" />
-                    <h3>Cargar una imagen</h3>
+                    <img src={cameraIcon} alt="camera" />
+                    <h3>Haz una foto</h3>
                     <p>
                       En la imagen sólo debe aparecer tu cara. La imagen no debe
                       superar los 5 megabytes
                     </p>
                   </div>
+                </li>
+              </ul>
 
-                  <p>
-                    Al cargar una imagen acepta las normas de transferencia de
-                    <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-foto-es/">
-                      datos personales
-                    </Link>
-                  </p>
-                </label>
-              </li>
-
-              <li
-                onClick={() =>
-                  isCamera
-                    ? navigate("/upload-image/camera")
-                    : navigate("/upload-image")
-                }
-              >
-                <div className={style.upload_image__content}>
-                  <img src={cameraIcon} alt="camera" />
-                  <h3>Haz una foto</h3>
-                  <p>
-                    En la imagen sólo debe aparecer tu cara. La imagen no debe
-                    superar los 5 megabytes
-                  </p>
-                </div>
-
-                <p>
-                  Al cargar una imagen acepta las normas de transferencia de
-                  <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-foto-es/">
-                    datos personales
-                  </Link>
-                </p>
-              </li>
-            </ul>
+              <p>
+                Al cargar una imagen acepta las normas de transferencia{" "}
+                <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-foto-es/">
+                  de datos personales
+                </Link>
+              </p>
+            </div>
           ) : (
             <div className={style.upload_image__image}>
               {imageLoading ? (
