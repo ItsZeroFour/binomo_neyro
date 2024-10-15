@@ -68,13 +68,30 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
     }
   };
 
-  console.log(neyroImageName);
+  const handleClick = () => {
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "Binomo_finish");
+    } else {
+      console.error("Яндекс.Метрика не загружена");
+    }
+  };
 
   return (
     <section className={style.image_generated}>
       <div className="container">
         <div className={style.image_generated__full}>
-          <Link to="https://binomo.com/es-es?utm_source=borja_ai_landing&utm_medium=SP2&utm_campaign=camp2" style={{ marginTop: 20 }}>
+          <Link
+            to={
+              utmSource !== null &&
+              utmMedium !== null &&
+              utmCampaign !== null &&
+              a !== null &&
+              ac !== null
+                ? `https://binomo.com/es-es?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
+                : "https://binomo.com/es-es"
+            }
+            style={{ marginTop: 20 }}
+          >
             <img src={logo} alt="logo" />
           </Link>
           <div className={style.image_generated__wrapper}>
@@ -161,6 +178,7 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
 
                 <div className={style.image_generated__buttons}>
                   <Link
+                    onClick={() => handleClick()}
                     to={
                       utmSource !== null &&
                       utmMedium !== null &&

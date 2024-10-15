@@ -10,6 +10,12 @@ const New = () => {
     } else {
       console.warn("Error!");
     }
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "mainpage_generate");
+    } else {
+      console.error("Яндекс.Метрика не загружена");
+    }
   };
 
   return (
@@ -59,8 +65,8 @@ const New = () => {
 
               <Link
                 className={style.new__link__second}
-                to="/upload-image"
                 onClick={handleClick}
+                to="/upload-image"
               >
                 Generar
               </Link>
