@@ -82,15 +82,7 @@ const NeyroImageGenerate = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
       <div className="container">
         <div className={style.neyro_image_generated__logo}>
           <Link
-            to={
-              utmSource !== null &&
-              utmMedium !== null &&
-              utmCampaign !== null &&
-              a !== null &&
-              ac !== null
-                ? `https://binomo.com/es-es?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
-                : "https://binomo.com/es-es"
-            }
+            to="https://binomo.com/es-es?utm_source=borja_ai_landing&utm_medium=SP2&utm_campaign=camp2"
           >
             <svg
               width="176"
