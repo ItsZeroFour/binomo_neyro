@@ -14,12 +14,12 @@ const Download = () => {
         <div className={style.download__wrapper}>
           <aside className={style.download__left}>
             <h2>Puede operar en cualquier dispositivo</h2>
-            <p>Puede operar en cualquier dispositivo</p>
+            {/* <p>Puede operar en cualquier dispositivo</p> */}
 
             <div className={style.download__users}>
               <div>
                 <h3>10m+</h3>
-                <p>Descargas </p>
+                <p>Descargas</p>
               </div>
 
               <img src={group} alt="group" />
@@ -27,22 +27,22 @@ const Download = () => {
 
             <ul>
               <li>
-                <Link to="/">
+                <Link to="https://play.google.com/store/apps/details?id=com.marketly.trading&pcampaignid=web_share">
                   <img src={googlePlay} alt="google play binomo" />
 
                   <div>
-                    <p>Download on</p>
+                    <p>Descargas</p>
                     <h4>Google play</h4>
                   </div>
                 </Link>
               </li>
 
               <li>
-                <Link to="/">
+                <Link to="https://apps.apple.com/co/app/binomo-online-trade-assistant/id1630992883">
                   <img src={apple} alt="app store binomo" />
 
                   <div>
-                    <p>Download on</p>
+                    <p>Descargas</p>
                     <h4>App store</h4>
                   </div>
                 </Link>

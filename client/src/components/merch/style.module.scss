@@ -16,11 +16,12 @@
     li {
       display: flex;
       flex-direction: column;
-      justify-content: start;
-      align-items: start;
+      justify-content: center;
+      align-items: center;
 
       width: 520px;
       height: 630px;
+      padding-top: 40px;
 
       background-color: var(--color-dark);
       border-radius: 16px;
@@ -29,6 +30,7 @@
 
       p {
         font-size: 28px;
+        text-align: center;
 
         @media (max-width: 520px) {
           font-size: 20px;
@@ -56,9 +58,22 @@
       }
 
       img {
+        padding-top: 20px;
+
+        @media (max-width: 1800px) {
+          width: 100%;
+          height: 90%;
+          padding-top: 0;
+        }
+
         @media (max-width: 520px) {
           width: 100%;
         }
+      }
+
+      @media (max-width: 1800px) {
+        width: 32%;
+        height: 500px;
       }
     }
 
@@ -66,7 +81,7 @@
       text-align: center;
     }
 
-    @media (max-width: 1800px) {
+    @media (max-width: 1295px) {
       display: none;
     }
   }
@@ -86,7 +101,7 @@
 .merch__container {
   display: none !important;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1295px) {
     display: flex !important;
   }
 }
@@ -94,8 +109,8 @@
 .merch__item {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 
   width: 80vw !important;
@@ -115,6 +130,7 @@
   p {
     font-size: 28px;
     margin-top: auto;
+    text-align: center;
 
     @media (max-width: 520px) {
       font-size: 20px;

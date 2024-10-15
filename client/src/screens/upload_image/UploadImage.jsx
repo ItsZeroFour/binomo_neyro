@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import imageCompression from "browser-image-compression";
 import axios from "axios";
 
-const UploadImage = () => {
+const UploadImage = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
   const [isCamera, setIsCamera] = useState(false);
   const [image, setImage] = useState("");
   const [imageLoading, setImageLoading] = useState(false);
@@ -109,7 +109,17 @@ const UploadImage = () => {
     <section className={style.upload_image}>
       <div className="container">
         <div className={style.upload_image__wrapper}>
-          <Link to="/">
+          <Link
+            to={
+              utmSource !== null &&
+              utmMedium !== null &&
+              utmCampaign !== null &&
+              a !== null &&
+              ac !== null
+                ? `https://binomo.com/es-es?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&a=${a}&ac=${ac}`
+                : "https://binomo.com/es-es"
+            }
+          >
             <svg
               width="176"
               height="34"

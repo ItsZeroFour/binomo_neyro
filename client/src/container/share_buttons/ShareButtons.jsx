@@ -55,6 +55,7 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
         }}
       >
         <img src={facebook} alt="facebook" />
+        <p>FaceBook</p>
       </button>
       <button
         onClick={() => {
@@ -63,6 +64,7 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
         }}
       >
         <img src={x} alt="x" />
+        <p>X(Twitter)</p>
       </button>
       <button
         onClick={() => {
@@ -71,6 +73,7 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
         }}
       >
         <img src={whatsapp} alt="facebook" />
+        <p>Whatsapp</p>
       </button>
       <button
         onClick={() => {
@@ -79,6 +82,7 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
         }}
       >
         <img src={reddit} alt="reddit" />
+        <p>Reddit</p>
       </button>
       <button
         onClick={() => {
@@ -87,6 +91,7 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
         }}
       >
         <img src={linkedin} alt="linkedin" />
+        <p>LinkedIn</p>
       </button>
     </div>
   );
