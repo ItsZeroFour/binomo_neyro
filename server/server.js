@@ -456,7 +456,7 @@ app.post("/api/aiUpload", upload.single("image"), async (req, res) => {
 /* NEYRO CONNECT */
 app.post("/api/uploadImage", async (req, res) => {
   try {
-    const serverAddress = "62.68.147.244:35525";
+    const serverAddress = process.env.NEYRO_SERVER_URL;
 
     /* Generate client id from filename (file name = client id) */
     const filePath = `${req.body.filename}`;
