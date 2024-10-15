@@ -10,6 +10,12 @@ const Head = () => {
     } else {
       console.warn("Error!");
     }
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "mainpage_generate");
+    } else {
+      console.error("Яндекс.Метрика не загружена");
+    }
   };
 
   return (
@@ -22,7 +28,7 @@ const Head = () => {
               Сamisetas y balones con su autógrafo, entradas de fútbol y bonos
               de depósito en Binomo. ¡Sueña a lo grande con Binomo!
             </p>
-            <Link to="/upload-image" onClick={handleClick}>
+            <Link onClick={handleClick} to="/upload-image">
               Genere
             </Link>
           </aside>
