@@ -27,13 +27,24 @@ const Head = () => {
               ¡Crea una foto con nuestro embajador Miguel Ángel Borja usando IA
               y gana premios increíbles!
             </h1>
+            <Link
+              className={style.head__link__mobile}
+              onClick={handleClick}
+              to="/upload-image"
+            >
+              Genere
+            </Link>
             <p>
               Haz un depósito de $30 USD y participa por artículos autografiados
               por Borja, entradas para partidos de fútbol y bonos de depósito.
               Comparte tu foto en redes sociales y etiquétanos para aumentar tus
               oportunidades de ganar.
             </p>
-            <Link onClick={handleClick} to="/upload-image">
+            <Link
+              className={style.head__link}
+              onClick={handleClick}
+              to="/upload-image"
+            >
               Genere
             </Link>
           </aside>
