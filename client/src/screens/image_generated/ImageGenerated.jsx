@@ -24,6 +24,18 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
   const { aiImageName } = location.state || {};
 
   useEffect(() => {
+    if (window.ym) {
+      if (!aiImageName) {
+        console.error("Error");
+      } else {
+        console.log("Success goal!");
+
+        window.ym(98607950, "reachGoal", "Binomo_finish");
+      }
+    }
+  }, [aiImageName]);
+
+  useEffect(() => {
     if (!aiImageName && !searchParams.get("neyroImageName")) {
       return navigate("/upload-image");
     } else if (searchParams.get("neyroImageName")) {
@@ -65,14 +77,6 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
       alert("El enlace se ha copiado correctamente");
     } catch (error) {
       console.error("Error al copiar un enlace");
-    }
-  };
-
-  const handleClick = () => {
-    if (window.ym) {
-      window.ym(98607950, "reachGoal", "Binomo_finish");
-    } else {
-      console.error("Яндекс.Метрика не загружена");
     }
   };
 
@@ -178,7 +182,6 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
 
                 <div className={style.image_generated__buttons}>
                   <Link
-                    onClick={() => handleClick()}
                     to={
                       utmSource !== null &&
                       utmMedium !== null &&
