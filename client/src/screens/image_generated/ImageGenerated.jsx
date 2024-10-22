@@ -52,6 +52,10 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
 
       document.body.removeChild(downloadLink);
       URL.revokeObjectURL(downloadLink.href);
+
+      if (window.ym) {
+        window.ym(98607950, "reachGoal", "save");
+      }
     } catch (error) {
       console.error("Ошибка при скачивании изображения:", error);
     }
@@ -62,6 +66,11 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
       await navigator.clipboard.writeText(
         `${process.env.REACT_APP_WEBSITE_DOMAIN}/image-generated?neyroImageName=${neyroImageName}`
       );
+
+      if (window.ym) {
+        window.ym(98607950, "reachGoal", "copy");
+      }
+
       alert("El enlace se ha copiado correctamente");
     } catch (error) {
       console.error("Error al copiar un enlace");
@@ -191,7 +200,17 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
                   >
                     Cambiar a Binomo
                   </Link>
-                  <Link to="/upload-image">Hacer una imagen diferente</Link>
+                  <Link
+                    to="/upload-image"
+                    onClick={() => {
+                      if (window.ym) {
+                        window.ym(98607950, "reachGoal", "one more");
+                        console.log("123");
+                      }
+                    }}
+                  >
+                    Hacer una imagen diferente
+                  </Link>
                 </div>
               </aside>
             </div>

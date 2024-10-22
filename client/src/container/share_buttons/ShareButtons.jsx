@@ -16,6 +16,10 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
       imageUrl
     )}&quote=${encodeURIComponent(text)}`;
     openShareWindow(url);
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "ShareFB");
+    }
   };
 
   const shareOnTwitter = () => {
@@ -23,6 +27,10 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
       imageUrl
     )}&text=${encodeURIComponent(text)}`;
     openShareWindow(url);
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "ShareX");
+    }
   };
 
   const shareOnWhatsApp = () => {
@@ -30,6 +38,10 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
       text
     )}%20${encodeURIComponent(imageUrl)}`;
     openShareWindow(url);
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "ShareWhatsapp");
+    }
   };
 
   const shareOnReddit = () => {
@@ -37,6 +49,10 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
       imageUrl
     )}&title=${encodeURIComponent(text)}`;
     openShareWindow(url);
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "ShareReddit");
+    }
   };
 
   const shareOnLinkedIn = () => {
@@ -44,6 +60,10 @@ function ShareButtons({ imageUrl, text, setOpenShareMenu }) {
       imageUrl
     )}`;
     openShareWindow(url);
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "ShareLinkidein");
+    }
   };
 
   return (
