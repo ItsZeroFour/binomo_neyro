@@ -23,12 +23,28 @@ const Head = () => {
       <div className="container">
         <div className={style.head__wrapper}>
           <aside className={style.head__left}>
-            <h1>Crea un retrato AI con Miguel Ángel Borja y gana premios</h1>
+            <h1>
+              ¡Crea una foto con nuestro embajador Miguel Ángel Borja usando IA
+              y gana premios increíbles!
+            </h1>
+            <Link
+              className={style.head__link__mobile}
+              onClick={handleClick}
+              to="/upload-image"
+            >
+              Genere
+            </Link>
             <p>
-              Сamisetas y balones con su autógrafo, entradas de fútbol y bonos
-              de depósito en Binomo. ¡Sueña a lo grande con Binomo!
+              Haz un depósito de $30 USD y participa por artículos autografiados
+              por Borja, entradas para partidos de fútbol y bonos de depósito.
+              Comparte tu foto en redes sociales y etiquétanos para aumentar tus
+              oportunidades de ganar.
             </p>
-            <Link onClick={handleClick} to="/upload-image">
+            <Link
+              className={style.head__link}
+              onClick={handleClick}
+              to="/upload-image"
+            >
               Genere
             </Link>
           </aside>
