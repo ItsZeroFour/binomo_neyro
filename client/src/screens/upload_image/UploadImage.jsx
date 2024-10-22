@@ -42,6 +42,10 @@ const UploadImage = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
 
   const handleChangeFile = async (event) => {
     try {
+      if (window.ym) {
+        window.ym(98607950, "reachGoal", "gallery");
+      }
+
       const file = event.target.files[0];
 
       const options = {
@@ -74,6 +78,11 @@ const UploadImage = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
 
   const uploadImage = async () => {
     if (!image) return;
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "OK");
+    }
+    
     const response = await fetch(image);
     const blob = await response.blob();
 

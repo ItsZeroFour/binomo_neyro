@@ -16,6 +16,10 @@ const Camera = () => {
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
 
+    if (window.ym) {
+      window.ym(98607950, "reachGoal’,’photo");
+    }
+
     if (imageSrc) {
       setImage(imageSrc);
     }
@@ -79,6 +83,11 @@ const Camera = () => {
 
   const uploadImage = async () => {
     if (!image) return;
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "OK");
+    }
+
     const response = await fetch(image);
     const blob = await response.blob();
 
