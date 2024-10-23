@@ -208,7 +208,6 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
                     onClick={() => {
                       if (window.ym) {
                         window.ym(98607950, "reachGoal", "one more");
-                        console.log("123");
                       }
                     }}
                   >
