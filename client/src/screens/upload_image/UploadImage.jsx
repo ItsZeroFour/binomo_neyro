@@ -80,9 +80,9 @@ const UploadImage = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
     if (!image) return;
 
     if (window.ym) {
-      window.ym(98607950, "reachGoal", "OK");
+      window.ym(98607950,'reachGoal','OK')
     }
-    
+
     const response = await fetch(image);
     const blob = await response.blob();
 

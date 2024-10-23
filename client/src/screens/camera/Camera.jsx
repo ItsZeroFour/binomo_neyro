@@ -17,7 +17,7 @@ const Camera = () => {
     const imageSrc = webcamRef.current.getScreenshot();
 
     if (window.ym) {
-      window.ym(98607950, "reachGoal’,’photo");
+      window.ym(98607950, "reachGoal", "photo");
     }
 
     if (imageSrc) {

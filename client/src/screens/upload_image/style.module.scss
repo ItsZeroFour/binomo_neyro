@@ -11,6 +11,10 @@
     overflow: auto;
   }
 
+  @media (max-height: 850px) {
+    height: 100%;
+  }
+
   // @media (max-height: 830px) {
   //   height: 100%;
   // }

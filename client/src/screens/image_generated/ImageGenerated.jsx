@@ -30,7 +30,7 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
       } else {
         console.log("Success goal!");
 
-        window.ym(98607950, "reachGoal", "Binomo_finish");
+        window.ym(98607950,'reachGoal','generated')
       }
     }
   }, [aiImageName]);
