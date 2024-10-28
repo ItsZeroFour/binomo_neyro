@@ -30,7 +30,7 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
       } else {
         console.log("Success goal!");
 
-        window.ym(98607950,'reachGoal','generated')
+        window.ym(98607950, "reachGoal", "generated");
       }
     }
   }, [aiImageName]);
@@ -179,14 +179,12 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
               <aside className={style.image_generated__content}>
                 <h1>tu foto está lista!</h1>
                 <p>
-                  Su código promocional especial: BORJABINOMO. El código
-                  promocional da +50% al depósito.
+                  No te olvides the compartir la foto en Instagram, Facebook o
+                  TikTok con la etiqueta de cuenta @binomo_america_latina y
+                  luego visite el sitio web de Binomo para hacer un depósito de
+                  $30 o más. Utilice el código de promoción BORJABINOMO para
+                  obtener un bono de depósito del 50%
                 </p>
-                <p>
-                  Comparte esta imagen en Instagram, TikTok o Telegram para
-                  tener la oportunidad de ganar premios.
-                </p>
-
                 <button onClick={() => setModal(true)}>Reglas de uso.</button>
 
                 <div className={style.image_generated__buttons}>

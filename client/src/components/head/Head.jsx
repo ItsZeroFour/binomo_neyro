@@ -24,8 +24,8 @@ const Head = () => {
         <div className={style.head__wrapper}>
           <aside className={style.head__left}>
             <h1>
-              ¡Crea una foto con nuestro embajador Miguel Ángel Borja usando IA
-              y gana premios increíbles!
+              ¡Tómate una foto con Miguel Borja, haz un deposito y gana
+              mercancía exclusiva!
             </h1>
             <Link
               className={style.head__link__mobile}
@@ -34,12 +34,18 @@ const Head = () => {
             >
               Genere
             </Link>
-            <p>
-              Haz un depósito de $30 USD y participa por artículos autografiados
-              por Borja, entradas para partidos de fútbol y bonos de depósito.
-              Comparte tu foto en redes sociales y etiquétanos para aumentar tus
-              oportunidades de ganar.
-            </p>
+            <div>
+              <p>
+                Crea una foto IA con Miguel Ángel Borja, haz un deposito de $30
+                o más en Binomo usando el código de promoción BORJABINOMO y gana
+                mercancía exclusiva firmada y tiquetes de fútbol.
+              </p>
+              <p style={{ marginTop: 10 }}>
+                Hazte un retrato AI con Borja, compártelo en las redes sociales
+                etiquetando a la cuenta @binomo_america_latina para aumentar tus
+                oportunidades de ganar!
+              </p>
+            </div>
             <Link
               className={style.head__link}
               onClick={handleClick}
@@ -49,6 +55,9 @@ const Head = () => {
             </Link>
           </aside>
           <aside className={style.head__right}>
+            <div className={style.head__sticker}>
+              <p>+ 50% al depósito, código promocional BORJABINOMO</p>
+            </div>
             <img src={headImg} alt="Miguel Ángel Borja" />
           </aside>
         </div>
