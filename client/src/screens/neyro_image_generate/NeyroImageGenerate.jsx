@@ -5,6 +5,7 @@ import style from "./style.module.scss";
 
 const NeyroImageGenerate = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
   const [aiImageGeneratedName, setAiImageGeneratedName] = useState("");
+  const [count, setCount] = useState(15);
   const location = useLocation();
 
   const { file } = location.state || {};
@@ -15,6 +16,15 @@ const NeyroImageGenerate = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
       return navigate("/upload-image");
     }
   }, [file]);
+
+  useEffect(() => {
+    if (count > 0) {
+      const timer = setInterval(() => {
+        setCount((prevCount) => prevCount - 1);
+      }, 1000);
+      return () => clearInterval(timer);
+    }
+  }, [count]);
 
   async function uploadImage() {
     try {
@@ -116,7 +126,7 @@ const NeyroImageGenerate = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
         </div>
 
         <div className={style.neyro_image_generated__wrapper}>
-          <p>Esperando...</p>
+          <p>Esperando [{count}]</p>
         </div>
       </div>
     </section>

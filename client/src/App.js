@@ -11,6 +11,7 @@ import Camera from "./screens/camera/Camera";
 import NeyroImageGenerate from "./screens/neyro_image_generate/NeyroImageGenerate";
 import ImageGenerated from "./screens/image_generated/ImageGenerated";
 import { useEffect, useState } from "react";
+import HowUse from "./components/how_use/HowUse";
 
 function App() {
   const [searchParams] = useSearchParams();
@@ -85,6 +86,7 @@ function App() {
 
                 <main>
                   <Head />
+                  <HowUse />
                   <Merch />
                   <New />
                   <Advantages />

@@ -24,26 +24,22 @@ const Head = () => {
         <div className={style.head__wrapper}>
           <aside className={style.head__left}>
             <h1>
-              ¡Tómate una foto con Miguel Borja, haz un deposito y gana
-              mercancía exclusiva!
+              ¡Hazte una foto con Miguel Borja y gana premios increíbles de
+              Binomo!
             </h1>
             <Link
               className={style.head__link__mobile}
               onClick={handleClick}
               to="/upload-image"
             >
-              Genere
+              Únete
             </Link>
             <div>
               <p>
-                Crea una foto IA con Miguel Ángel Borja, haz un deposito de $30
-                o más en Binomo usando el código de promoción BORJABINOMO y gana
-                mercancía exclusiva firmada y tiquetes de fútbol.
-              </p>
-              <p style={{ marginTop: 10 }}>
-                Hazte un retrato AI con Borja, compártelo en las redes sociales
-                etiquetando a la cuenta @binomo_america_latina para aumentar tus
-                oportunidades de ganar!
+                Binomo ofrece una oportunidad única para todos los fanáticos del
+                fútbol y el trading: ¡crea tu propia foto virtual con el famoso
+                delantero colombiano de "River Plate," Miguel Ángel Borja, y
+                participa en el sorteo de premios exclusivos!
               </p>
             </div>
             <Link
@@ -51,13 +47,13 @@ const Head = () => {
               onClick={handleClick}
               to="/upload-image"
             >
-              Genere
+              Únete
             </Link>
           </aside>
           <aside className={style.head__right}>
-            <div className={style.head__sticker}>
+            {/* <div className={style.head__sticker}>
               <p>+ 50% al depósito, código promocional BORJABINOMO</p>
-            </div>
+            </div> */}
             <img src={headImg} alt="Miguel Ángel Borja" />
           </aside>
         </div>

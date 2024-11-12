@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./style.module.scss";
-import newImg from "../../assets/images/new_man.png";
+import logo from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
 const New = () => {
@@ -22,54 +22,27 @@ const New = () => {
     <section className={style.new}>
       <div className="container">
         <div className={style.new__wrapper}>
-          <h2>nuevo embajador de Binomo, Miguel Ángel Borja</h2>
-
           <ul>
             <li>
-              <img src={newImg} alt="Miguel Ángel Borja" />
+              <h2>QUÉ ES BINOMO?</h2>
+
+              <p>
+                Binomo es una plataforma en línea que permite tanto a los
+                operadores inexpertos como a los expertos ganar fondos extra
+                incluso sobre la marcha. 
+              </p>
+
+              <p>
+                Binomo opera en más de 130 países. Llevamos prestando servicios
+                desde 2014 y nos hemos consolidado como una plataforma de
+                primera clase con una amplia gama de activos. 
+              </p>
+
+              <Link to="/">¡Participe en el concurso!</Link>
             </li>
 
             <li>
-              <h3>Participa en el concurso de Binomo:</h3>
-
-              <ol>
-                <li>
-                  <p>
-                    1. Haz un FTD de 30 $ o más durante el periodo de promoción
-                    del 14/10 al 15/11 y ¡gana premios!
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    2. Hazte un retrato AI con Borja, compártelo en las redes
-                    sociales etiquetando a la cuenta @binomo_america_latina
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    3. Gana uno de los premios: bono de depósito +100%,
-                    camisetas y balones autografiados o una entrada para el
-                    partido Colombia vs Ecuador.
-                  </p>
-                </li>
-              </ol>
-
-              <Link
-                className={style.new__link__first}
-                to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es"
-              >
-                Bases detalladas aquí.
-              </Link>
-
-              <Link
-                className={style.new__link__second}
-                onClick={handleClick}
-                to="/upload-image"
-              >
-                Generar
-              </Link>
+              <img src={logo} alt="logo" />
             </li>
           </ul>
         </div>

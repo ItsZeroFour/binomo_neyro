@@ -16,8 +16,19 @@ const Merch = () => {
     <section className={style.merch}>
       <div className="container">
         <div className={style.merch__wrapper}>
+          <h2>Premios para los ganadores</h2>
+          <p>
+            El 29 de noviembre, Binomo seleccionará al azar a 50 ganadores que
+            recibirán los siguientes premios. Atención: los premios se asignarán
+            aleatoriamente entre los ganadores.
+          </p>
+
           <ul>
             <li>
+              <div className={style.merch__items_sec}>
+                <p>15 camisetas</p>
+                <p>1 bola</p>
+              </div>
               <div>
                 <img src={tshirtImg} alt="tshirt" />
               </div>
@@ -28,6 +39,10 @@ const Merch = () => {
             </li>
 
             <li>
+              <div className={style.merch__items_sec}>
+                <p>5 entradas para el fútbol</p>
+              </div>
+
               <div>
                 <img src={ticketsImg} alt="tickets" />
               </div>
@@ -38,6 +53,10 @@ const Merch = () => {
             </li>
 
             <li>
+              <div className={style.merch__items_sec}>
+                <p>32 duplicar el depósito</p>
+              </div>
+
               <div>
                 <img src={saleImg} alt="tickets" />
               </div>
@@ -80,6 +99,11 @@ const Merch = () => {
             }}
           >
             <SwiperSlide className={style.merch__item}>
+              <div className={style.merch__items_sec}>
+                <p>15 camisetas</p>
+                <p>1 bola</p>
+              </div>
+
               <div>
                 <img src={tshirtImg} alt="tshirt" />
               </div>
@@ -90,6 +114,10 @@ const Merch = () => {
             </SwiperSlide>
 
             <SwiperSlide className={style.merch__item}>
+              <div className={style.merch__items_sec}>
+                <p>5 entradas para el fútbol</p>
+              </div>
+
               <div>
                 <img src={ticketsImg} alt="tickets" />
               </div>
@@ -100,6 +128,9 @@ const Merch = () => {
             </SwiperSlide>
 
             <SwiperSlide className={style.merch__item}>
+              <div className={style.merch__items_sec}>
+                <p>32 duplicar el depósito</p>
+              </div>
               <div>
                 <img src={saleImg} alt="tickets" />
               </div>

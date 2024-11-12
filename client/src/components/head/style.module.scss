@@ -21,9 +21,10 @@
     width: 770px;
 
     h1 {
-      font-size: 64px;
-      font-family: "Nunito-eb", sans-serif;
-      font-weight: 800;
+      font-size: 70px;
+      font-family: "Nunito-bd", sans-serif;
+      font-weight: 700;
+      font-style: italic;
 
       @media (max-width: 1400px) {
         font-size: 56px;
@@ -39,22 +40,24 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 28px;
+      line-height: 160%;
 
       @media (max-width: 1400px) {
-        font-size: 18px;
+        font-size: 24px;
       }
 
       @media (max-width: 1160px) {
-        font-size: 16px;
+        font-size: 20px;
       }
 
       @media (max-width: 520px) {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 140%;
       }
 
       @media (max-width: 390px) {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
 

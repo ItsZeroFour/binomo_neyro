@@ -6,6 +6,34 @@
   }
 }
 
+.merch__wrapper > h2 {
+  font-size: 48px;
+  font-family: "Nunito-eb", sans-serif;
+  font-weight: 800;
+
+  @media (max-width: 520px) {
+    font-size: 32px;
+  }
+}
+
+.merch__wrapper > p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 1200px;
+  font-size: 24px;
+
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
+  @media (max-width: 520px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 16px;
+  }
+}
+
 .merch__wrapper {
   ul {
     display: flex;
@@ -171,4 +199,20 @@
 
 .merch__item > p {
   text-align: center;
+}
+
+.merch__items_sec {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+
+  p {
+    padding: 10px 20px;
+    background: var(--color-yellow);
+    border-radius: 40px;
+    font-size: 16px !important;
+    color: var(--color-dark);
+  }
 }

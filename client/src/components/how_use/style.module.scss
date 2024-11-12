@@ -1,0 +1,162 @@
+.how_use {
+  margin-top: 120px;
+}
+
+.how_use__wrapper {
+  h2 {
+    font-size: 48px;
+    font-family: "Nunito-eb", sans-serif;
+    font-weight: 800;
+
+    @media (max-width: 520px) {
+      font-size: 32px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    @media (max-width: 1295px) {
+      display: none;
+    }
+  }
+}
+
+.how_use_item {
+  width: 520px;
+  background: var(--color-dark);
+  padding: 20px 20px 0px 20px;
+  color: var(--color-white);
+  border-radius: 15px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1800px) {
+    width: 33%;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-family: "Nunito-md", sans-serif;
+    font-weight: 500;
+  }
+
+  p {
+    opacity: 0.8;
+    margin-top: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    width: 80%;
+  }
+
+  .how_use__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+
+    img {
+      @media (max-width: 1610px) {
+        width: 80%;
+      }
+
+      @media (max-width: 1295px) {
+        width: auto;
+      }
+
+      @media (max-width: 620px) {
+        width: 100%;
+      }
+    }
+  }
+
+  img,
+  p,
+  h3 {
+    z-index: 2;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: url("../../assets/images/line-1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.how_use_item__special_2 {
+  height: 420px !important;
+}
+
+.how_use_item__special {
+  color: var(--color-dark);
+  background: var(--color-yellow);
+
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 20px;
+
+    a {
+      &:first-child {
+        width: 100%;
+        background: var(--color-dark);
+        padding: 20px;
+        border-radius: 20px;
+        color: var(--color-white);
+        text-align: center;
+      }
+
+      &:last-child {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.merch__container {
+  display: none !important;
+
+  @media (max-width: 1295px) {
+    display: flex !important;
+  }
+}
+
+.merch__items {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+
+  p {
+    padding: 10px 20px;
+    background: var(--color-yellow);
+    border-radius: 40px;
+    font-size: 16px !important;
+    color: var(--color-dark);
+  }
+}
