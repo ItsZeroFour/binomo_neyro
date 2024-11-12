@@ -10,7 +10,7 @@
 
 .head__wrapper {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   width: 100%;
 
@@ -19,12 +19,21 @@
     flex-direction: column;
     gap: 60px;
     width: 770px;
+    margin-top: 100px;
+
+    @media (max-width: 520px) {
+      margin-top: 0;
+    }
 
     h1 {
       font-size: 70px;
       font-family: "Nunito-bd", sans-serif;
       font-weight: 700;
       font-style: italic;
+
+      @media (max-width: 1700px) {
+        font-size: 64px;
+      }
 
       @media (max-width: 1400px) {
         font-size: 56px;
@@ -47,11 +56,11 @@
       font-size: 28px;
       line-height: 160%;
 
-      @media (max-width: 1400px) {
+      @media (max-width: 1700px) {
         font-size: 24px;
       }
 
-      @media (max-width: 1160px) {
+      @media (max-width: 1400px) {
         font-size: 20px;
       }
 
