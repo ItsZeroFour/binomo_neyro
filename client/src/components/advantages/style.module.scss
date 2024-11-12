@@ -1,5 +1,9 @@
 .advantages {
   margin-top: 120px;
+
+  @media (max-width: 430px) {
+    margin-top: 40px;
+  }
 }
 
 .advantages__wrapper {
