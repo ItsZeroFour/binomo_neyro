@@ -185,11 +185,9 @@ const ImageGenerated = ({ utmSource, utmMedium, utmCampaign, a, ac }) => {
               <aside className={style.image_generated__content}>
                 <h1>tu foto está lista!</h1>
                 <p>
-                  No te olvides the compartir la foto en Instagram, Facebook o
-                  TikTok con la etiqueta de cuenta @binomo_america_latina y
-                  luego visite el sitio web de Binomo para hacer un depósito de
-                  $30 o más. Utilice el código de promoción BORJABINOMO para
-                  obtener un bono de depósito del 50%
+                  Guarda esta foto en tu galería, compártela en el feed de tu
+                  cuenta (no en Stories) y etiqueta a la cuenta de Binomo
+                  @binomo_america_latino en la foto.
                 </p>
                 <Link
                   to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es"

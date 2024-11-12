@@ -45,8 +45,8 @@ const HowUse = () => {
             >
               <h3>3. El 29 de noviembre</h3>
               <p>
-                Publica la foto en tus redes sociales (Facebook o Instagram) y
-                etiqueta a @binomo_america_latino.
+                El 29 de noviembre anunciaremos a 50 ganadores seleccionados al
+                azar.
               </p>
               <div>
                 <Link to="/upload-image">Generar Foto</Link>
@@ -113,14 +113,17 @@ const HowUse = () => {
             <SwiperSlide
               className={`${style.how_use_item} ${style.how_use_item__special} ${style.how_use_item__special_2}`}
             >
-              <h3>3. El 29 de noviembre</h3>
+              <h3>
+                3. El 29 de noviembre anunciaremos a 50 ganadores seleccionados
+                al azar.e
+              </h3>
               <p>
                 Publica la foto en tus redes sociales (Facebook o Instagram) y
                 etiqueta a @binomo_america_latino.
               </p>
               <div>
                 <Link to="/upload-image">Generar Foto</Link>
-                <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es">
+                <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es/">
                   Más detalles sobre las reglas del concurso
                 </Link>
               </div>

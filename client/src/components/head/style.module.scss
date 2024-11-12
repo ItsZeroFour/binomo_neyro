@@ -37,6 +37,10 @@
       @media (max-width: 520px) {
         font-size: 28px;
       }
+
+      @media (max-width: 380px) {
+        font-size: 26px;
+      }
     }
 
     p {
@@ -162,7 +166,11 @@
 
     @media (max-width: 520px) {
       width: 420px !important;
-      margin-top: 0% !important;
+      margin-top: -3% !important;
+    }
+
+    @media (max-width: 380px) {
+      margin-top: -5% !important;
     }
   }
 

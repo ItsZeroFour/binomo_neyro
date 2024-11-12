@@ -38,7 +38,7 @@
         p {
           font-size: 28px;
 
-          @media (max-width: 620px) {
+          @media (max-width: 1440px) {
             font-size: 20px;
           }
         }
@@ -53,12 +53,12 @@
           text-align: center;
           color: var(--color-white);
 
-          @media (max-width: 620px) {
+          @media (max-width: 1400px) {
             width: 100%;
           }
         }
 
-        @media (max-width: 1440px) {
+        @media (max-width: 1140px) {
           width: 100%;
         }
       }
@@ -70,7 +70,7 @@
         justify-content: center;
         align-items: center;
 
-        @media (max-width: 1440px) {
+        @media (max-width: 1140px) {
           display: none;
         }
       }

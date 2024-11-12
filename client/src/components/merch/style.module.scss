@@ -91,7 +91,7 @@
         @media (max-width: 1800px) {
           width: 100%;
           height: 90%;
-          padding-top: 0;
+          padding-top: 20px;
         }
 
         @media (max-width: 520px) {
@@ -101,7 +101,6 @@
 
       @media (max-width: 1800px) {
         width: 32%;
-        height: 500px;
       }
     }
 
@@ -181,8 +180,12 @@
     width: 100%;
   }
 
-  @media (max-width: 520px) {
-    height: 400px !important;
+  @media (max-width: 620px) {
+    height: 550px !important;
+  }
+
+  @media (max-width: 430px) {
+    height: 450px !important;
   }
 
   img {

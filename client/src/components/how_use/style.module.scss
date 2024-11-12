@@ -1,5 +1,9 @@
 .how_use {
   margin-top: 120px;
+
+  @media (max-width: 430px) {
+    margin-top: 30px;
+  }
 }
 
 .how_use__wrapper {
@@ -110,6 +114,12 @@
   display: flex;
   flex-direction: column;
 
+  h3 {
+    @media (max-width: 430px) {
+      font-size: 24px;
+    }
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -121,13 +131,14 @@
     margin-bottom: 20px;
 
     a {
+      text-align: center;
+
       &:first-child {
-        width: 100%;
+        width: 90%;
         background: var(--color-dark);
         padding: 20px;
         border-radius: 20px;
         color: var(--color-white);
-        text-align: center;
       }
 
       &:last-child {
