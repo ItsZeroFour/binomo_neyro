@@ -9,6 +9,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const HowUse = () => {
+  const handleClick = () => {
+    if (window.fbq) {
+      window.fbq("track", "Lead");
+    } else {
+      console.warn("Error!");
+    }
+
+    if (window.ym) {
+      window.ym(98607950, "reachGoal", "mainpage_generate");
+    } else {
+      console.error("Яндекс.Метрика не загружена");
+    }
+  };
+
   return (
     <section className={style.how_use}>
       <div className="container">
@@ -31,9 +45,8 @@ const HowUse = () => {
             <li className={style.how_use_item}>
               <h3>2. Comparte en tus redes sociales</h3>
               <p>
-                Haz clic en "Generar Foto" y crea tu foto con Miguel Ángel Borja
-                usando inteligencia artificial (IA) directamente en nuestro
-                sitio web.
+                Publica la foto en tus redes sociales (Facebook o Instagram) y
+                etiqueta a @binomo_america_latino.
               </p>
               <div className={style.how_use__image}>
                 <img src={socials} alt="phone" />
@@ -49,8 +62,13 @@ const HowUse = () => {
                 azar.
               </p>
               <div>
-                <Link to="/upload-image">Generar Foto</Link>
-                <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es/">
+                <Link onClick={handleClick} to="/upload-image">
+                  Generar Foto
+                </Link>
+                <Link
+                  to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es/"
+                  target="_blank"
+                >
                   Más detalles sobre las reglas del concurso
                 </Link>
               </div>
@@ -103,9 +121,8 @@ const HowUse = () => {
             <SwiperSlide className={style.how_use_item}>
               <h3>2. Comparte en tus redes sociales</h3>
               <p>
-                Haz clic en "Generar Foto" y crea tu foto con Miguel Ángel Borja
-                usando inteligencia artificial (IA) directamente en nuestro
-                sitio web.
+                Publica la foto en tus redes sociales (Facebook o Instagram) y
+                etiqueta a @binomo_america_latino.
               </p>
               <div className={style.how_use__image}>
                 <img src={socials} alt="phone" />
@@ -117,12 +134,15 @@ const HowUse = () => {
             >
               <h3>3. Sorteo del 29 de noviembre</h3>
               <p>
-                Publica la foto en tus redes sociales (Facebook o Instagram) y
-                etiqueta a @binomo_america_latino.
+                El 29 de noviembre anunciaremos a 50 ganadores seleccionados al
+                azar.
               </p>
               <div>
                 <Link to="/upload-image">Generar Foto</Link>
-                <Link to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es/">
+                <Link
+                  to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es/"
+                  target="_blank"
+                >
                   Más detalles sobre las reglas del concurso
                 </Link>
               </div>

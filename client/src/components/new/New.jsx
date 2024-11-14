@@ -38,7 +38,9 @@ const New = () => {
                 primera clase con una amplia gama de activos. 
               </p>
 
-              <Link to="/upload-image">¡Participe en el concurso!</Link>
+              <Link onClick={handleClick} to="/upload-image">
+                ¡Participe en el concurso!
+              </Link>
             </li>
 
             <li>
