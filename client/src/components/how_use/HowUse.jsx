@@ -137,7 +137,7 @@ const HowUse = () => {
                 El 29 de noviembre anunciaremos a 50 ganadores seleccionados al
                 azar.
               </p>
-              <div>
+              <div style={{ zIndex: 100 }}>
                 <Link to="/upload-image">Generar Foto</Link>
                 <Link
                   to="https://blog.binomo.com/https-blog-binomo-com-borja-reglas-es/"
